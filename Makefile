@@ -2,7 +2,7 @@ PROJECT_NAME     := ble_app_blinky_adv_pca10040_s132
 TARGETS          := nrf52832_xxaa
 OUTPUT_DIRECTORY := _build
 
-SDK_ROOT := /media/data/projects/BLE/nRF5_SDK_15
+SDK_ROOT := /media/data/projects/BLE/nRF5_SDK_16
 
 $(OUTPUT_DIRECTORY)/nrf52832_xxaa.out: \
 	LINKER_SCRIPT  := ble_app_gcc_nrf52.ld
@@ -269,7 +269,7 @@ INC_FOLDERS += \
 # Libraries common to all targets {{{
 LIB_FILES += \
 	     $(SDK_ROOT)/external/nrf_cc310/lib/cortex-m4/hard-float/libnrf_cc310_0.9.12.a \
-	     $(SDK_ROOT)/external/nrf_oberon/lib/cortex-m4/hard-float/liboberon_2.0.7.a \
+	     $(SDK_ROOT)/external/nrf_oberon/lib/cortex-m4/hard-float/liboberon_3.0.1.a \
 	     # }}}
 
 # Optimization flags
